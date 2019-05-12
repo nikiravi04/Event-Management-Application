@@ -1,0 +1,58 @@
+<div>
+  <div class="row1">
+      <div class="leftside">
+          <h5>Tuesday, March 26, 2019</h5>
+          <h2>ESL Convention club</h2>
+          <h5>Hosted by <a href="#">xyz</a></h5>
+          <h5>From <a href="#">abc</a></h5>
+      </div>
+      <div class="rightside">
+          <div>
+              <h5>Are you going? 14 spots left</h5>
+          </div>
+          <div>
+              <button type="button" class="btn btn-primary" (click)="openDialog()">Interested</button>
+              <button type="button" class="btn btn-primary">Not Interested</button>
+          </div>
+          <div class="sharediv">
+              <span class="share">Share: <a href="#">Facebook</a><a href="#">Twitter</a><a href="#">LinkedIn</a></span>
+          </div>
+      </div>
+    </div>
+  <div class="row2">
+    <div class="leftside">
+        <h2>Event Description</h2>
+        <p>Attend the 15th annual SecureWorld Boston cybersecurity conference!</p>
+  
+            <p>Join your fellow security professionals for affordable, high-quality cybersecurity training and education. Attend featured keynote presentations, panel discussions, and breakout sessions—all while networking with local peers. Earn 12-16 CPE credits through 60+ educational elements, learning from nationally-recognized industry leaders. Visit the expo floor and discover the latest technologies from over 40 security solutions providers.</p>
+            
+            <p>SecureWorld conferences provide more content and facilitate more connections than any other cybersecurity event in North America. Our 17 regional events equip and inspire IT professionals on the front lines. For over 17 years, we’ve stayed on top of global IT security issues and shared the critical knowledge and tools needed to thwart ever-evolving threats. Through our network of industry experts, thought leaders, practitioners, and solution providers, we collaborate to produce leading-edge, relevant content and educational opportunities.</p>
+    </div>
+    <div class="rightside">
+        <div class="top">
+            <div class="when">
+                <img src="https://img.icons8.com/ios/25/000000/clock.png">
+                <span>Wednesday, March 27, 2019</span>
+            </div>
+            <br>
+            <div class="where">
+                <img src="https://img.icons8.com/ios/25/000000/marker.png">
+                <span>Hynes Convention Center 900 Boylston Street, Boston, MA</span>
+            </div>
+            <div class="website">
+                <!-- <a href=""<img class="z-depth-1-half map-container" src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+  &markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+  &markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=AIzaSyCtIpco3_1Ja5GH7TNgaDdV5CeUCgR4hek" alt="Map view of loaction"/> -->
+            </div>
+        </div>
+        <div class="bottom">
+            <!-- <div id="map">
+                
+            </div> -->
+            <agm-map id="map" [latitude]="latitude" [longitude]="longitude" [zoom]="14">
+              <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker> 
+            </agm-map> 
+        </div>
+    </div>
+  </div>
+  </div>

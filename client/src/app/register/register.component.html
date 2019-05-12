@@ -1,0 +1,69 @@
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+        <div class="card">
+          <!--Card header for the registration form-->
+          <div class="card-header">
+            <h1>Register</h1>
+            <p class="lead">Already a member? Please <a routerLink="/login">log in</a> instead.</p>
+          </div>
+          <!--Card body for the registration form-->
+          <div class="card-body">
+                <form (ngSubmit)="register()" method="POST" [formGroup]="regForm" novalidate>
+    
+                  <!--Name-->
+                  <div class="form-group">
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            <input type="text" class="form-control" name="name" placeholder="Enter your name" [(ngModel)]="credentials.name" formControlName="name" required>
+                          </div>
+                        <div *ngIf="regForm.controls['name'].invalid && (regForm.controls['name'].dirty || regForm.controls['name'].touched)" class="alert alert-danger">
+                            <div *ngIf="regForm.controls['name'].errors.required">Name is required</div>
+                        </div>
+                      </div>
+                  </div>
+                  <!--Email-->
+                  <div class="form-group">
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-at"></i></span>
+                            <input type="email" class="form-control" name="email" placeholder="Enter email" [(ngModel)]="credentials.email" formControlName="email" required>
+                          </div>
+                        <div *ngIf="regForm.controls['email'].invalid && (regForm.controls['email'].dirty || regForm.controls['email'].touched)" class="alert alert-danger">
+                            <div *ngIf="regForm.controls['email'].errors.required">Email is required</div>
+                        </div>
+                      </div>
+                  </div>
+                  <!--Phone-->
+                  <div class="form-group">
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                            <input type="tel" class="form-control" name="phone" placeholder="Enter phone" [(ngModel)]="credentials.phone" formControlName="phone" required>
+                          </div>
+                          <div *ngIf="regForm.controls['phone'].invalid && (regForm.controls['phone'].dirty || regForm.controls['phone'].touched)" class="alert alert-danger">
+                              <div *ngIf="regForm.controls['phone'].errors.required">Phone is required</div>
+                          </div>
+                        </div>
+                  </div>
+                  <!--Password-->
+                  <div class="form-group">
+                      <div class="input-group form-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="credentials.password" formControlName="password" required>
+                          </div>
+                          <div *ngIf="regForm.controls['password'].invalid && (regForm.controls['password'].dirty || regForm.controls['password'].touched)" class="alert alert-danger">
+                              <div *ngIf="regForm.controls['password'].errors.required">Password is required</div>
+                          </div>
+                      </div>
+                  </div>
+    
+                  <button type="submit" class="btn btn-left login_btn" [disabled]="regForm.pristine || regForm.invalid">Register!</button>
+                </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>

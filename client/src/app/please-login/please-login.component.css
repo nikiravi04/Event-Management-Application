@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.form-horizontal{
+    text-align: center;
+}
+.mat-dialog-title {
+    margin: 0 0 0px;
+    display: block;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mat-dialog-actions {
+ position: relative;
+ top: 20px;
+ margin: 0 auto;
+ width: 60%;
+     padding: 0;
+    display: inline;
+    flex-wrap: nowrap;
+    margin-bottom: -24px;
+    outline: none;
+}
+button, input, optgroup, select, textarea {
+    margin: auto;
+    font: inherit;
+    color: inherit;
+    background-color: #f44336;
+    height: 30px;
+    position: relative;
+    left: 40%;
+    width: 20%;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    outline: none;
+}
+
+.head{
+    height: 50px;
+    width: 100%;
+    background-color:#f44336;
+    margin-bottom:60px;
+}
+
+.foot{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color:#f44336;
+  bottom:-120px;
+}
+
+button:hover{
+    background-color: #e93427;
+}
+
+.form-horizontal{
+    position: relative;
+    top: 20px;
+}
+.headings{
+
+    float: left;
+    width: 100%;
+    display: inline-block;
+}
+.name{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+   width:45%;
+   text-align: right;
+   float:left;
+    padding: 1%;
+    font-weight: bold;
+}
+
+.answer{
+    
+    font-family: 'Montserrat', sans-serif;
+    display:inline-block;
+    width: 50%;
+    text-align: left;
+    padding: 1%;
+    font-weight: 100;
+}
+
+.container{
+    display: inline-block;
+    width:100%;
+}

@@ -1,0 +1,86 @@
+<!-- This is the Event details page -->
+<div class="wrapper" *ngFor="let e of eventsDetails">
+    <!-- This is the div to add the blurred image in the background -->
+        <div class="blurred" >
+                <div class="background" [ngStyle]="{ 'background-color':'white', 'background-image': 'url(' + e.logo.url + ')', 'background-size':'cover',  'width': '120%', 'height':'500px' ,'filter': 'blur(55px)' }">
+                </div>         
+                </div>
+            <!-- This div adds the content of the details div -->
+        <div class = "wrapper-details">
+        <div class = "row-1">
+            <div class = "left">
+                <div class="image"  [ngStyle]="{'background-image': 'url(' + e.logo.url + ')', 'background-size':'cover', 'width': '780px', 'height':'400px' }">
+                </div>
+            </div>
+            <!-- Details of the event are bound to the page here -->
+                <div class = "right">
+                    <div class ="date">
+                        {{startdate}}
+                    </div>
+                    <div class = "content">
+                        {{e.name.text}}
+                    </div>
+                    <div class = "city" *ngFor='let v of venArr'>{{v.address.city}}</div>
+                    <!-- These are the buttons to call function on interested  -->
+                    <button class ="interested" (click)="openDialog()">Interested?</button>
+                    <div class = "fb">
+                       <div class = "fbtext">Share: </div> 
+                    <iframe class="fbutton" [src]='urls' width="100" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media">
+                    </iframe>
+                    </div>
+                </div>
+        </div>
+        <!-- This div displays the event description  -->
+        <div class = "row-2">
+                <div class = "left-2">
+                    <div class = "event-header">About the event!</div>
+                    <div class="content-event" >
+                        {{e.description.text}}
+                    </div>
+                </div>
+                <div class = "right">
+                <div class="top">
+                    Date and Time: 
+                    <!-- Here we are displaying the date and time of the event -->
+                        <div class="start">
+                           {{startdate}}, {{starttime}} -
+                        </div>
+                        
+                        <div class="end">
+                            {{enddate}}, {{endtime}}
+                        </div>
+
+                        <div class="timezone">
+                          Timezone - {{e.start.timezone}}
+                        </div>
+
+                        <div class = "Location" *ngFor='let v of venArr'>
+                            <div>Location:</div>
+                                <div class = "address">
+                                  <div>{{v.address.address_1}}</div>
+                                  <div>{{v.address.address_2}}</div>
+                                  <div>{{v.address.city}}</div>
+                                  <div>{{v.address.country}}</div>
+
+                                </div>
+    
+                            </div>
+                       
+                    </div>
+                    <!-- This is the div to display the Google map -->
+                    <div class="mapdiv">
+                      <div class = "maptext">Location on map: </div> 
+                       <div class = "map">
+                        <agm-map  id="map" [latitude]="latitude" [longitude]="longitude" [zoom]="14">
+                          <agm-marker [latitude]="latitude" [longitude]="longitude"></agm-marker> 
+                        </agm-map>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+    
+
+

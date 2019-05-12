@@ -1,0 +1,35 @@
+
+<div class = "mid-container">
+    <div class = "mid-logo">
+      
+    </div>  
+  </div>
+
+
+<!--Div to show the name of the searched text-->
+  <div class="searchresults">
+      Search results for: {{searchName}}</div>
+
+<!--A grid container to hold all the events diplayed based on the search text-->      
+<div class="grid-container">
+    
+    <ul class = "grid" *ngFor="let todo of events">
+      
+    
+      <button id="button2"  [ngStyle]="{'background-image': 'url(' + todo.logo.url + ')'}" class = "viewcontactBtn" value ="show" (click)="Move(todo.id)" >  
+    
+        <div class="grid-item" >  
+    
+              
+                <div class="text">
+                  <div class = "eventname">{{ todo.name.text }}</div>
+                </div>
+    
+              </div>
+            
+    
+          </button>
+      
+    </ul>
+    
+    </div>

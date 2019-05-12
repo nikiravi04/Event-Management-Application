@@ -1,0 +1,38 @@
+<div class= "head"></div>
+<h2 mat-dialog-title>More tickets? Update Now</h2>
+<mat-dialog-content>
+<!-- The Details of the registration are bound here and displayed -->
+</mat-dialog-content>
+  <div class="form-horizontal">
+      <div class = "container">
+          <div class = "headings">
+            <!--Populates the existing data of particular from database to allow him to update-->
+              <div class="name">Name:</div>
+              <div class = "answer">{{data.reg.UserName}}</div>
+              <div class="name">Email:</div>
+              <div class ="answer"> {{data.reg.EmailID}}</div>
+              <div class="name">Phone:</div>
+              <div class ="answer"> {{data.reg.PhoneNumber}}</div>
+              <div class="name">Tickets Registered for:</div>
+              <div class ="answer"> {{data.reg.AttendeesNum}}</div>
+            </div>
+        </div>
+        <!-- update the number of attending the event -->
+        <div class="name">Update number of tickets:</div>
+        <div class="answer"><select class="options" (change)="getPersonCount($event.target.value)">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select></div>
+  </div>
+
+<!--A button to save all the data that has been updated-->
+<mat-dialog-actions>
+ <!-- calling a function to close the popup on button click -->
+  <button mat-button (click)="onNoClick()">Cancel</button>&nbsp;
+  <button mat-raised-button (click)="save(data.reg)">Save</button>
+</mat-dialog-actions>
+
+<div class= "foot"></div>

@@ -1,0 +1,74 @@
+/* Styling */
+.bg-primary {
+    background-color: #f44436!important;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 0rem!important;
+}
+
+/*Stats of team styling*/
+.stats{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.staat-item{
+    position: relative;
+    width: 50%;
+    color: #a4a4a4;
+    padding: 0 10px 40px;
+    font-weight: normal;
+    font-family: "GT Walsheim Medium", "GT Walsheim Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+}
+/* The setp */
+.step-up {
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.staats-group{
+
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.staat-item{
+    position: relative;
+    width: 50%;
+    color: #a4a4a4;
+    padding: 0 10px 40px;
+    font-weight: normal;
+    font-family: "GT Walsheim Medium", "GT Walsheim Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+}
+
+h3 {
+    color: #353839;
+    margin: 0 0 10px;
+    line-height: 1;
+    font-weight: normal;
+    font-family: "GT Walsheim Medium", "GT Walsheim Regular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 6rem;
+}
+
+.staat-item::after{
+    display: block;
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    height: 9px;
+    background: #1b1d1e;
+}
+
+.staats-p{
+    font-size:2.5rem;
+}
+
+
+
+
+
+

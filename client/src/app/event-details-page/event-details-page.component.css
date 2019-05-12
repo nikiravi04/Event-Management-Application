@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* The second row */
+.row2 {  
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 3px solid black;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #F6F7F8;
+}
+
+/* The left side */
+.leftside {
+    flex: 60%;
+    background-color:inherit;
+    padding: 20px;
+}
+
+/* The right part part */
+.rightside {
+    flex: 40%;
+    background-color:inherit;
+    padding: 20px;
+}
+
+/* The top size  */
+.top{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* The start time  */
+
+.start{
+    position: relative;
+    margin: 1% auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* The end time */
+
+.end{
+    position: relative;
+    margin: 1% auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* The timezone */
+
+.timezone{
+    position: relative;
+    margin: 1% auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    font-size: 16px;
+}
+
+/* The map text */
+
+.maptext{
+    margin: 1% auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* The map */
+.map{
+    height: 300px;
+    width: 100%;
+ 
+}
+
+/* Map ID part sets size */
+#map{
+    height: 300px;
+    width: 100%;
+}
+
+.background{
+    position: relative;
+    left: -10%;
+    width: 120%;
+     height:500px ;
+     filter: blur(55px);
+}
+
+.blurred{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       uuuuheight: 400px;
+}
+.row1 {  
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 3px solid black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.leftside {
+    flex: 60%;
+    background-color:inherit;
+    padding: 0px;
+}
+
+.rightside {
+    flex: 40%;
+    background-color:inherit;
+ padding: 0px;
+}
+
+.sharediv{
+    padding: 15px 0 15px 0;
+}
+
+.share{
+    padding: 5px 0 5px 0;
+    border-top: 2px solid #F6F7F8;
+    border-bottom: 2px solid #F6F7F8;
+}
+
+.wrapper{
+    position: relative;
+    border-top: 1px solid rgb(197, 197, 197);
+    width: 100%;
+    margin-bottom: 0px;
+    height: auto;
+}
+
+
+.wrapper-details{
+    position: relative;
+
+    border-radius: 5px;
+    width: 80%;
+    margin-top: -30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    height: 100%;
+
+    background-color: rgb(206, 206, 206);
+  box-shadow: -2px 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row-1{
+    position: relative;
+  background-color: white;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-inline-end: 0px;
+
+}
+
+
+.row-2{
+    margin: -5px auto;
+    
+    position: relative;
+   padding: 1%;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid rgb(197, 197, 197);
+}
+
+.left{
+    float: left;
+    display: inline;
+    position: relative;
+    margin: 0 ;
+    width: 65%;
+    overflow: hidden;
+    left: 0;
+
+}
+
+.left-2{
+    float: left;
+    display: inline;
+    position: relative;
+    margin: 0 auto;
+    padding: 1%;
+    width: 64%;
+    left: 0;
+
+}
+
+.right{
+    
+    float: right;
+    display: inline;
+    position: relative;
+    margin: 0 auto;
+    width: 35%; 
+    padding: 1%;
+}
+
+.content{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    margin: 0 auto;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    overflow: hidden;
+
+}
+
+.content-event{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: justify;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+.event-header{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+
+.hr-2{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border: 0;
+    border-top: 1px solid rgb(197, 197, 197);
+}
+
+
+.image{
+    display: flex;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin: 0px auto;
+    padding: 0 auto;
+    border: 0;
+    height: 200px;
+    width: 400px;
+    background-size: cover;
+    background-repeat: round;
+    background: rgba(0,0,0,1);
+   outline:0;
+   margin-left: 0px;
+  }
+
+  .interested{
+      position: relative;
+      margin-top: 2%;
+      width: 30%;
+      border: 0px;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: lighter;
+      height: 30px;
+      background-color: #f14236;
+  }
+
+  .interested:hover{
+     background-color: #e93427;
+  }
+
+  .date{
+      width:20%;
+      height: 20px;
+      font-size: 14px;
+      font-weight: normal;
+      overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+ 
+  }
+
+  .fb{ 
+      font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+     font-family: 'Montserrat', sans-serif;
+      position: relative;
+     bottom: 0;
+     top: 195px;
+     margin: 0 auto;
+     line-height: 1.28;
+     text-align: left;
+  }
+
+  .address{
+    position: relative;
+    margin: 1% auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    font-size: 16px;
+    
+  }
+
+  .city{
+    font-family: 'Montserrat', sans-serif;
+  }

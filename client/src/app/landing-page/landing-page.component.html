@@ -1,0 +1,203 @@
+
+
+<!-- The Parallax Video -->
+<div class = "video-container">
+  <video  autoplay = "autoplay" loop = "loop" muted id="video-background" plays-inline>
+    <source src="../../../assets/Avicii - The Nights.mp4" type="video/mp4" muted>
+  </video> 
+</div>
+  
+<!-- The Logo and sign in button in the middle -->
+<div class = "mid-container">
+  <div class = "mid-logo">
+
+  </div>
+  
+<!--To check if the user has already looged in -->
+  <div *ngIf="!auth.isLoggedIn()" class = "login-div">
+    <a routerLink="/login"><button class = "mid-login">Join us now</button> </a>
+  </div>
+  <h2>Explore the world outside!</h2>
+
+</div>
+<!-- The scrollable part -->
+<div class="wrapper-trending">
+    <h3 class="h3-trend">See what's trending around you! </h3>   
+
+    <!-- The grid -->
+    <div class="grid-container">
+    <ul class ="grid-trend" *ngFor="let todo of users">  
+     
+  <!-- Each item in a grid, i.e, the button -->
+      
+  <button class="viewcontactBtn" [ngStyle]="{'background-image': 'url(' + todo.logo.url + ')', 'background-size':'cover'}" (click)="Move(todo.id)">
+            
+
+
+    <div class = "content-overlay">
+      <div class="content-details fadeIn-bottom">
+      <h3 class="content-title">{{todo.name.text}}</h3>
+        <!-- <p class="content-text">Click to explore events</p> -->
+      </div>
+    </div>
+      
+          </button>
+
+        </ul>
+      </div>
+      
+        
+      </div>
+  
+<!-- The Middle caption part -->
+<div class = "caption-container">
+    <div class = "caption-logo">
+  
+    </div>
+</div>
+
+      
+   
+<!--The Categories Div-->
+<div class = "wrapper-categories">
+  <h3>Browse events by category</h3>
+
+  <!-- The grid -->
+    <ul class="grid">
+        
+      <!-- Music one -->
+      <button class="grid-item music" (click)="MoveToCategory(103)">
+         
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Music</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+         
+        </button>
+        <!-- Business & Professional-->
+      <button class="grid-item business" (click)="MoveToCategory(101)">
+          
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Business & Professional</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+         
+        </button>
+        <!-- Film, Media & Entertainment -->
+      <button class="grid-item movie" (click)="MoveToCategory(104)">
+         
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Film, Media & Entertainment</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+         
+        </button>
+        <!-- Sports & Fitness -->
+      <button class="grid-item sports" (click)="MoveToCategory(108)">
+          
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Sports & Fitness</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+        
+        </button>
+        <!-- Health & Wellness -->
+      <button class="grid-item health" (click)="MoveToCategory(107)">
+         
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Health & Wellness</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+         
+        </button>
+        <!-- Science & Technology -->
+      <button class="grid-item tech" (click)="MoveToCategory(102)">
+         
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Science & Technology</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+         
+        </button>
+        <!-- Travel & Outdoor -->
+      <button class="grid-item travel" (click)="MoveToCategory(109)">
+          
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Travel & Outdoor</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+         
+        </button>
+        <!-- Religion & Spirituality -->
+      <button class="grid-item spirituality" (click)="MoveToCategory(114)">
+         
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Religion & Spirituality</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+         
+        </button>
+        <!--Fashion & Beauty-->
+      <button class="grid-item fashion" (click)="MoveToCategory(106)">
+         
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Fashion & Beauty</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+        
+        </button>
+        <!-- Government & Politics-->
+      <button class="grid-item politics" (click)="MoveToCategory(112)">
+          
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Government & Politics</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+         
+        </button>
+        <!--Home & Lifestyle -->
+      <button class="grid-item home" (click)="MoveToCategory(117)">
+         
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Home & Lifestyle</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+         
+        </button>
+        <!--Hobbies & Special Interest-->
+      <button class="grid-item hobbies" (click)="MoveToCategory(119)">
+         
+            <div class = "content-overlay">
+              <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Hobbies & Special Interest</h3>
+                <p class="content-text">Click to explore events</p>
+              </div>
+            </div>
+        
+        </button>
+
+      </ul>
+      
+      </div>

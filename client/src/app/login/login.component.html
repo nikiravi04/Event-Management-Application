@@ -1,0 +1,44 @@
+<body>
+<div class="container">
+  <div class="d-flex justify-content-center h-100">
+    <div class="card">
+      <div class="card-header">
+              <h1 class="form-signin-heading">Sign in</h1>
+              <p class="lead">Not a member? Please <a routerLink="/register">register</a> instead.</p>
+      </div>
+      <!--Card body for the login form-->
+      <div class="card-body">
+      <form (submit)="login()" name="myForm" [formGroup]="loginForm" novalidate>
+        <!--Email-->
+        <div class="form-group">
+            <div class="input-group form-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-at"></i></span>
+                  <input type="email" class="form-control" name="email" placeholder="Enter email" [(ngModel)]="credentials.email" formControlName="email"  required>
+                </div>
+                <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)" class="alert alert-danger">
+                    <div *ngIf="loginForm.controls['email'].errors.required">Email is required</div>
+                </div>
+            </div>
+        </div>
+        <!--Password-->
+        <div class="form-group">
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-key"></i></span>
+              <input type="password" class="form-control" formControlName="password" name="password" placeholder="Password" [(ngModel)]="credentials.password" required>
+            </div>
+            <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)" class="alert alert-danger">
+                <div *ngIf="loginForm.controls['password'].errors.required">Password is required</div>
+            </div>
+          </div>
+        </div>
+
+        <button [disabled]="loginForm.pristine || loginForm.invalid" type="submit" class="btn btn-left login_btn">Sign in!</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
+</body>

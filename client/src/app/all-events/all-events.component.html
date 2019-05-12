@@ -1,0 +1,73 @@
+
+<!--All events page based on Category-->
+<div class = "mid-container">
+    <div class = "mid-logo">
+      
+    </div>
+
+   
+    
+    <div class = "search">
+      
+
+      <div class = "srch">
+
+    <div class = "searchtext">
+    <input type="text" [(ngModel)]="searchText" value="search" placeholder="Find events here" >
+  </div>
+  
+  </div>
+
+  <!-- Filter part -->
+  <div class = "flt">
+    <div class = "filter">
+      
+      <div class = "select"> Filter events based on</div>
+    <select  (change)="filterbasedonValue($event.target.value)">
+           
+        <option value="AllEvents">All Events</option>
+        <option value="Location">Location</option>
+      </select>
+
+    </div>
+
+  </div>
+    <div class = "searchBtn">
+        <button id="button2"  class = "searchbutton" value ="show" (click)="MoveToEvents(searchText)" ></button>
+    </div>
+  </div>
+
+
+  
+  </div>
+
+
+<!-- Grid which contains all the events-->
+
+<div class="grid-container">
+  
+  <!-- For loop to loop thru all the ecnets from event brite api-->
+<ul class = "grid" *ngFor="let todo of final">
+  
+
+  <!--Sets the backgroound image from URl-->
+  <button id="button2"  [ngStyle]="{'background-image': 'url(' + todo.logo.url + ')'}" class = "viewcontactBtn" value ="show" (click)="Move(todo.id)" >  
+
+    <div class="grid-item" >  
+
+          
+            <div class="text">
+              <div class = "eventname">{{ todo.name.text }}</div>
+            </div>
+        
+          </div>
+        
+
+      </button>
+  
+</ul>
+
+</div>
+
+
+<router-outlet></router-outlet>

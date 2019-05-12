@@ -1,0 +1,33 @@
+<!-- The body -->
+<body>
+  <!-- Container for mid part -->
+    <!--  The profile box -->
+    <div class = "profilebox">
+      <div class = "textname">{{ details?.name }}  </div>
+      <!-- Contents for populating -->
+    <div class = "container">
+    <div class = "headings">
+     <div class="name">Email:  
+      </div> <div class ="answer"> {{ details?.email }}  </div>
+     <div class="name">Phone Number: </div> <div class ="answer">  {{ details?.phone }}   </div>
+    </div>
+  </div>
+  <!--Events of the User-->
+<div class = "textevents">Your Events  </div>
+    <div class="grid-container">
+        <ul class = "grid" *ngFor="let todo of resArr">
+          <button id="button2"  [ngStyle]="{'background-image': 'url(' + todo.logo.url + ')' ,'background-size':'cover'}" class = "viewcontactBtn" value ="show" (click)="Move(todo.id)" >
+            <div class="grid-item" >  
+                    <div class="text">
+                      <div class = "date"></div>
+                      <div class = "eventname">{{ todo.name.text }}</div>
+                    </div>
+            </div>
+          </button>
+          <button class="deleteBtn" (click)="delete(todo.id)">Cancel</button>
+          <button class="deleteBtn" (click)="update(todo.id)">Update</button>
+        </ul>  
+        </div>
+ </div>
+ 
+</body> 

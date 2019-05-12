@@ -1,0 +1,41 @@
+<div class= "head"></div>
+<!-- This is the modal where we're asking to finish rsvp -->
+<h2 mat-dialog-title>Complete Your RSVP</h2>
+<mat-dialog-content>
+
+</mat-dialog-content>
+  <div class="form-horizontal">
+
+
+<div class = "container">
+      <div class = "headings">
+       <div class="name">Name:
+        <!-- This is the code to extract data that is beign sent from event detils component -->
+       </div> <div class = "answer">  {{data.reg.UserName}}    </div>
+       <div class="name">Email:  
+      </div> <div class ="answer">  {{data.reg.EmailID}}   </div>
+       <div class="name">Phone Numer: </div> <div class ="answer">  {{data.reg.PhoneNumber}}      </div>
+      
+
+      
+    </div>
+  </div>
+  <!-- This is to take the number of people attending the event  -->
+  <div class="name">People attending:</div>
+    <div class ="answer"><select class="options" (change)="getPersonCount($event.target.value)">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select></div>
+</div>
+
+
+<mat-dialog-actions>
+ <!-- This is where we call functions on button click -->
+  <button mat-button (click)="onNoClick()">Cancel</button>&nbsp;
+  <button mat-raised-button (click)="save(data.reg)">Register</button>
+</mat-dialog-actions>
+
+<div class= "foot"></div>

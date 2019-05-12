@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+/* body */
+
+body{
+    margin: 0px;
+}
+
+
+/* The nav container */
+.nav{
+    
+    display: inline-block;
+    width: 100%;
+    margin:auto;
+    background: white;
+   
+}
+
+/* The logo in the nav */
+.logo{
+    height: 60px;
+    width: 150px;
+    background-image: url(/assets/Untitled-2.png);
+    float:left;
+    background-size: cover;
+    margin-left: 15px;
+}
+
+/* The login/sign up and logout div css properties */
+.nav-div{ 
+    margin:20px;
+    float:right; 
+ 
+    
+   }
+
+/* The Login Sign-up nav */
+.nav-div a {
+    position: relative;
+    z-index: 1;
+    padding:9px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration : none; 
+    text-align: center;
+    height: 20px;
+    width: 115px;
+    color : rgb(27, 27, 27);
+}
+
+/* The design for login sign up */
+
+
+.nav-div a:before, .nav-div a:after
+{   
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    
+    border-radius: 30px;
+    left: 0px;
+    z-index: -1;
+    content: '';
+    background: #f44336;
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+.nav-div a:hover, .nav-div a:focus {
+   color: white;
+
+
+}
+.nav-div a:before
+{
+    top: 0px;
+} 
+
+.nav-div a:after
+{
+    bottom: 0px;
+}
+.nav-div a:hover:before, .nav-div a:hover:after
+{
+    color : rgb(24, 24, 24);
+    height: 100%;
+}
+
+/* The Name part */
+
+.nav-div-name{ 
+    margin:20px;
+    float:right; 
+ 
+    
+   }
+
+/* The name nav */
+.nav-div-name a {
+    position: relative;
+    z-index: 1;
+    padding:9px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration : none; 
+    text-align: center;
+    height: 20px;
+    width: 115px;
+    color : rgb(27, 27, 27);
+}
+
+/* The design for login sign up */
+
+
+.nav-div-name a:before, .nav-div-name a:after
+{   
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    
+    border-radius: 30px;
+    left: 0px;
+    z-index: -1;
+    content: '';
+    background: #f44336;
+    opacity: 0.8;
+    transition: all 0.4s;
+}
+
+.nav-div-name a:hover, .nav-div-name a:focus {
+   color: white;
+
+
+}
+.nav-div-name a:before
+{
+    top: 0px;
+} 
+
+.nav-div-name a:after
+{
+    bottom: 0px;
+}
+.nav-div-name a:hover:before, .nav-div-name a:hover:after
+{
+    color : rgb(24, 24, 24);
+    height: 100%;
+}
+
+/* The Footer */
+
+.footer-distributed {
+    position: relative;
+    display: inline-block;
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    top: 5%;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+  }
+  
+  .content-footer{
+      position: relative;
+        padding-left: 1%;
+      top: 30%;
+      margin: 0 auto;
+      max-width: 100%;
+      }
+  .getaround{
+      display: inline;
+      color:rgb(163, 163, 163);
+
+  }
+
+  .things{
+      position: relative;
+      display: inline;
+      left: 25%;
+  }
+
+  .things a{
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration : none; 
+  }
+
+
+
+

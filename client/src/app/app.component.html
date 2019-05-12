@@ -1,0 +1,53 @@
+<!--Nav bar-->
+<header>
+    <div class="nav" >
+       
+        <a routerLink="/">
+          <div class="logo"></div>
+        </a>
+
+        <div *ngIf="auth.isLoggedIn()" class="nav-div-name">
+            <a routerLink="/profile">{{ auth.getUserDetails()?.name }}</a>
+        </div>
+
+       <div *ngIf="!auth.isLoggedIn()" class="nav-div">
+         <a routerLink="/login"> Login/Sign up</a>
+       </div>
+
+       <div *ngIf="auth.isLoggedIn()" class="nav-div">
+          <a (click)="auth.logout()"> Logout</a>
+        </div>
+
+     </div>  
+   </header>
+
+   <router-outlet></router-outlet>
+
+   <!--Footer section-->
+   <footer class="footer-distributed">
+
+    <div class = "content-footer">
+    <div class="getaround">
+        &copy; getaround.com  2019
+        </div>
+          <div class = "things"> 
+        <a class="link-1" href="#">Home |</a>
+
+        <a routerLink="/aboutus">About Us |
+        </a>
+
+        <a href="#">Terms and Conditions |</a>
+
+
+        <a href="#">FAQ |</a>
+
+        <a href="#">Contact us</a>
+      </div>
+    </div>
+    
+  </footer>
+
+ 
+
+
+

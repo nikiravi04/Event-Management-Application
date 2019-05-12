@@ -1,0 +1,60 @@
+.row2 {  
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 3px solid black;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #F6F7F8;
+}
+.leftside {
+    flex: 60%;
+    background-color:inherit;
+    padding: 20px;
+}
+.rightside {
+    flex: 40%;
+    background-color:inherit;
+    padding: 20px;
+}
+
+.top{
+    background-color:white;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+#map{
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.row1 {  
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 3px solid black;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.leftside {
+    flex: 60%;
+    background-color:inherit;
+    padding: 20px;
+}
+
+.rightside {
+    flex: 40%;
+    background-color:inherit;
+    padding: 20px;
+}
+
+.sharediv{
+    padding: 15px 0 15px 0;
+}
+
+.share{
+    padding: 5px 0 5px 0;
+    border-top: 2px solid #F6F7F8;
+    border-bottom: 2px solid #F6F7F8;
+}
